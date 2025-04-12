@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 #Problem: Ask user for a number and check if it's even or odd.
 
 read -p "Enter the number : " num
@@ -18,7 +19,7 @@ do
 done
 
 
-#write program from 1-10 and the odd number and even number
+#Problem: write program from 1-10 and the odd number and even number
 for (( i=1; i<=10; i++ ))
 do 
     if (( i % 2 == 0 )); then
@@ -31,9 +32,7 @@ done
 
 
 
-
-
-#print the odd number 1 - 10 
+#Problem: print the odd number 1 to 10 
 
 
 for (( i=0; i<=10; i++ ))
@@ -44,7 +43,7 @@ do
 done
 
 
-#print the Even number 1 - 10 
+#Problem: print the Even number from 1 to 10 
 
 for (( i=0; i<=10; i++ ))
 do 
@@ -52,3 +51,17 @@ do
       echo $i
      fi
 done
+
+
+
+#Problem: Calculate the sum of numbers from 1 to N.
+
+read -p "Enter the number : " N
+sum=0
+for(( i=1; i<=N; i++ ))
+do
+  (( sum+=i )) 
+done
+echo "sum is $sum"
+
+
