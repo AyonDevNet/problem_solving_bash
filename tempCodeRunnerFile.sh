@@ -1,8 +1,15 @@
-
-read -p "Enter the number : " N
-sum=0
-for(( i=1; i<=N; i++ ))
+read -p "Enter a number: " n
+is_prime=1
+for ((i=2; i*i<=n; i++))
 do
-  (( sum+=i )) 
+  if ((n%i==0)); then
+    is_prime=0
+    break
+  fi
 done
-echo "sum is $sum"
+
+if ((is_prime && n > 1)); then
+  echo "$n is a prime number."
+else
+  echo "$n is not a prime number."
+fi
