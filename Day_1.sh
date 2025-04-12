@@ -65,3 +65,5 @@ done
 echo "sum is $sum"
 
 
+#Problem: Check if a number is prime.
+
