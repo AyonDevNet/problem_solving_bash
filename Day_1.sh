@@ -67,3 +67,20 @@ echo "sum is $sum"
 
 #Problem: Check if a number is prime.
 
+read -p "Enter the number : " N
+is_prime=1
+for (( n=1; i<=N; i++ ))
+ 
+  if (( n % 1 == 0 )); then
+  is_prime = 0
+  break
+  fi
+
+done
+
+
+if ((is_prime && n > 1)); then
+  echo "$n is a prime number."
+else
+  echo "$n is not a prime number."
+fi
