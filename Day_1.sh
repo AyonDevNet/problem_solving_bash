@@ -92,3 +92,11 @@ do
    ((fact*=i))
 done
 echo "the number is $n and its fact : $fact"
+
+
+#Problem: Reverse a string input by the user.
+
+read -p "Resere the string : " str
+echo  $str | rev
+read -p "Enter a string: " str
+echo "$str" | rev
