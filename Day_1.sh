@@ -83,5 +83,12 @@ else
   echo "$n is not a prime number."
 fi
 
+#Problem: Calculate factorial of a given number.
 
-echo "testing"
+read -p "Enter the number : " n
+fact=1
+for (( i=2; i<=n; i++ ))
+do
+   ((fact*=i))
+done
+echo "the number is $n and its fact : $fact"
