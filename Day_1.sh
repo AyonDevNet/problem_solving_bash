@@ -82,3 +82,6 @@ if ((is_prime && n > 1)); then
 else
   echo "$n is not a prime number."
 fi
+
+
+echo "testing"
