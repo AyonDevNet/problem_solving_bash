@@ -97,6 +97,31 @@ echo "the number is $n and its fact : $fact"
 #Problem: Reverse a string input by the user.
 
 read -p "Resere the string : " str
-echo  $str | rev
-read -p "Enter a string: " str
-echo "$str" | rev
+echo  "$str" | rev
+
+
+#Problem: Check if the string is a palindrome.
+
+#!/bin/bash
+read -p "Enter your command : " str
+rev=$(echo "$str" | rev)
+if [[ "$str" == "$rev" ]]; then
+  echo "This is a palindrome"
+else 
+  echo "This is not"
+fi
+
+
+#palindrome without "rev" command
+read -p "Enter your command: " str
+rev=""
+len=${#str}
+for (( i=$len-1; i>=0; i-- )); do
+  rev="$rev${str:$i:1}"
+done
+
+if [[ "$str" == "$rev" ]]; then
+  echo "This is a palindrome"
+else
+  echo "This is not"
+fi
