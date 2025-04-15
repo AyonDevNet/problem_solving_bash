@@ -125,3 +125,16 @@ if [[ "$str" == "$rev" ]]; then
 else
   echo "This is not"
 fi
+
+
+#Problem: Find the maximum of three numbers.
+read -p "Enter the number : " a b c
+max=$a
+ if (( b>max )); then
+    max=$b
+ fi
+
+ if (( c > max )); then
+     max=$c
+ fi
+   echo "the max number is : " $max
