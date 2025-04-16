@@ -138,3 +138,35 @@ max=$a
      max=$c
  fi
    echo "the max number is : " $max
+
+#find the minimum number
+   read -p "Enter the minimum number : " a b c 
+   mini=$a
+
+   if (( b < mini )); then
+      mini = $b
+   fi
+
+   if (( c < mini )); then
+       mini = $c
+   fi
+     echo "your minimum number is : " $mini
+
+
+
+#find the exac number 
+
+no=6
+ 
+for i in 1 2 3 4 5 6 7 8 9
+do
+  if [[ $no -eq $i ]]; then
+
+
+     echo "no number is found" $no
+     break
+
+  fi
+     echo "number is $i"
+
+done
