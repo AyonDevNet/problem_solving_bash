@@ -170,22 +170,8 @@ do
      echo "number is $i"
 
 done
-Conversation opened. 1 read message.
-
-Skip to content
-Using Gmail with screen readers
-12 of 6,257
-(no subject)
-Inbox
-
-Rafi mohammed
-Attachments
-Apr 19, 2025, 12:17 AM (1 day ago)
-to me
 
 
- One attachment
-  •  Scanned by Gmail
 #Problem:Write a function called greet_user that takes a name as input and prints a greeting based on the current time.
 
 greet_user(){
