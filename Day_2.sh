@@ -29,9 +29,9 @@ read -p "Enter the name : " input
 found=0
 for name in ${name[@]}
 do
-  if [[ $name == $input ]];
+  if [[ name == input ]];
     then
-       found=1
+       $found=1
        break
    fi
 done
@@ -40,5 +40,29 @@ if (( found == 1 ));
     then
     echo find the name $input
   else
-       echo your name is not foud
+       echo your name is not found
 fi
+
+
+#Check if number Exists
+
+
+   numds=(5 12 45 23 8 19)
+   read -p "Enter the number : " input2
+   found2=0
+   for math in ${numds[@]}
+   do
+      if [[ math == input2 ]];
+      then
+          $found2=1
+          break
+      fi
+   done
+    
+   if (( found2 = 1 )); 
+   then
+       echo found your name $input2
+   else
+        echo your input is not found
+   fi  
+      
