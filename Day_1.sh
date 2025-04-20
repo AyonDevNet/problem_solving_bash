@@ -170,3 +170,111 @@ do
      echo "number is $i"
 
 done
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+12 of 6,257
+(no subject)
+Inbox
+
+Rafi mohammed
+Attachments
+Apr 19, 2025, 12:17 AM (1 day ago)
+to me
+
+
+ One attachment
+  •  Scanned by Gmail
+#Problem:Write a function called greet_user that takes a name as input and prints a greeting based on the current time.
+
+greet_user(){
+
+read -p "Enter your time : " time
+
+if (( time <= 12 )); then 
+    echo "Good morning, Raju"
+else 
+    echo "Good after noon, Raju"
+fi   
+}
+
+greet_user
+
+
+
+#Problem: Write a function check_number that takes a number as input and tells whether it is positive, negative, or zero.
+
+check_number(){
+
+read -p "Enter the number : " number
+
+if (( number == 0 )); then
+    echo "The number is Zero"
+elif (( number < 0 )); then
+     echo "The number is Negative"
+else
+     echo "The number is Positive"
+
+fi
+
+}
+check_number
+
+
+#Problem: Write a function compare_numbers that takes two numbers and prints which one is greater, or if they are equal.
+
+compare_numbers(){
+
+
+read -p "Enter the number1 : " comapre1
+read -p "Enter the number2 : " comapre2
+
+if (( comapre1 > comapre2 )); then  
+    echo "the number1 is greater than number2"
+elif
+     (( comapre1 < comapre2 )); then
+      echo "the number1 is less than number2"
+else 
+    echo "Your input have issues !!! "
+
+fi
+}
+compare_numbers
+
+#Problem:
+#Write a function convert_temp that takes a Celsius temperature and converts it to Fahrenheit using the formula:
+#F = (C × 9/5) + 32
+
+
+convert_temp() {
+    read -p "Enter temperature in Celsius: " celsius
+    fahrenheit=$(echo "scale=2; ($celsius * 9/5) + 32" | bc)
+    echo "$celsius°C is equal to $fahrenheit°F"
+}
+
+convert_temp
+
+
+#Problem:
+#Write a function check_char that takes a single letter and checks whether it's a vowel or consonant.
+
+
+
+check_char() {
+    read -p "Enter a single letter: " char
+
+    # Convert to lowercase just in case
+    char=$(echo "$char" | tr 'A-Z' 'a-z')
+
+    if [[ "$char" =~ ^[aeiou]$ ]]; then
+        echo "$char is a vowel."
+    elif [[ "$char" =~ ^[a-z]$ ]]; then
+        echo "$char is a consonant."
+    else
+        echo "Invalid input. Please enter a single letter."
+    fi
+}
+
+check_char
+
