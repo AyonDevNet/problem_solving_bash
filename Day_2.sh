@@ -66,3 +66,15 @@ fi
         echo your input is not found
    fi  
       
+  #find out the Index of thi code
+
+read -p "Enter the value (1-5) : " input
+
+ my_array=( 1 2 3 4 5 )
+ for arrya in ${!my_array[@]}
+ do
+
+    echo $arrya
+
+ done
+
